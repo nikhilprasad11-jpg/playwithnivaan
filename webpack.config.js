@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     clean: true,
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -36,6 +37,19 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      inject: true,
+      minify: process.env.NODE_ENV === 'production' ? {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      } : false,
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -67,4 +81,10 @@ module.exports = {
     host: '0.0.0.0',
   },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  optimization: {
+    minimize: process.env.NODE_ENV === 'production',
+  },
+  performance: {
+    hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
+  },
 };
