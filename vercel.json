@@ -15,6 +15,10 @@
       "dest": "/bundle.js"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
       "src": "/dinosaur/(.*)",
       "dest": "/dinosaur/$1"
     },
