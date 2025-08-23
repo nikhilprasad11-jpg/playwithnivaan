@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Compsognathus",
+    "image": "/dinosaur/images/Compsognathus.jpg"
+  },
+  {
+    "name": "Brachiosaurus",
+    "image": "/dinosaur/images/Brachiosaurus.jpg"
+  },
+  {
+    "name": "Baryonyx",
+    "image": "/dinosaur/images/Baryonyx.jpg"
+  },
+  {
+    "name": "Argentinosaurus",
+    "image": "/dinosaur/images/Argentinosaurus.jpg"
+  },
+  {
+    "name": "Archaeopteryx",
+    "image": "/dinosaur/images/Archaeopteryx.jpg"
+  },
+  {
+    "name": "Apatosaurus",
+    "image": "/dinosaur/images/apatosaurus.jpg"
+  },
+  {
+    "name": "Ankylosaurus",
+    "image": "/dinosaur/images/ankylosaurus.jpg"
+  },
+  {
+    "name": "Iguanodon",
+    "image": "/dinosaur/images/Iguanodon.jpg"
+  },
+  {
+    "name": "Diplodocus",
+    "image": "/dinosaur/images/Diplodocus.jpg"
+  },
+  {
+    "name": "Giganotosaurus",
+    "image": "/dinosaur/images/Giganotosaurus.jpg"
+  },
+  {
+    "name": "Gallimimus",
+    "image": "/dinosaur/images/Gallimimus.jpg"
+  },
+  {
+    "name": "Dilophosaurus",
+    "image": "/dinosaur/images/Dilophosaurus.jpg"
+  }
+]
