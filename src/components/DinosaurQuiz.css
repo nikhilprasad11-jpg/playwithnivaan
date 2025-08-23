@@ -6,7 +6,7 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   min-height: 80vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
 }
 
 /* Start Screen */

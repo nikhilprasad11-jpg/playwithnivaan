@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   color: white;
   margin: 0;
   font-size: 1.8rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,6 +42,7 @@
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
   font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .nav-link:hover {
