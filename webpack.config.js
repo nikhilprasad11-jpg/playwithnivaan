@@ -66,5 +66,5 @@ module.exports = {
     allowedHosts: 'all',
     host: '0.0.0.0',
   },
-  mode: 'development',
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 };
