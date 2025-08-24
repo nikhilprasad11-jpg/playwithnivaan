@@ -38,6 +38,32 @@ import PlateosaurusImg from '../assets/images/Plateosaurus.jpg';
 
 // New PNG images
 import IguanodonPngImg from '../assets/images/IGUANODON.png';
+import CarnotaurusImg from '../assets/images/Carnotaurus.png';
+import MamenchisaurusImg from '../assets/images/Mamenchisaurus.png';
+
+// New WebP images (additional)
+import DreadnoughtusImg from '../assets/images/Dreadnoughtus.webp';
+import IndoraptorImg from '../assets/images/Indoraptor.webp';
+import StygimolochImg from '../assets/images/Stygimoloch.webp';
+import SinoceratopsImg from '../assets/images/Sinoceratops.webp';
+import IndominusRexImg from '../assets/images/Indominus rex.webp';
+import CeratosaurusImg from '../assets/images/Ceratosaurus.webp';
+import PteranodonImg from '../assets/images/Pteranodon.webp';
+import KentrosaurusImg from '../assets/images/Kentrosaurus.webp';
+import EdmontosaurusImg from '../assets/images/Edmontosaurus.webp';
+import TherizinosaurusImg from '../assets/images/Therizinosaurus.webp';
+
+// New JPEG images (additional)
+import MononykusImg from '../assets/images/Mononykus.jpeg';
+import CorythosaurusImg from '../assets/images/Corythosaurus.jpeg';
+import StegosaurusImg from '../assets/images/Stegosaurus.jpeg';
+
+// New JPG images (additional)
+import MosasaurusImg from '../assets/images/Mosasaurus.jpg';
+import DimorphodonImg from '../assets/images/Dimorphodon.jpg';
+import MinmiImg from '../assets/images/minmi.jpg';
+import EuoplocephalusImg from '../assets/images/Euoplocephalus.jpg';
+import StyracosaurusImg from '../assets/images/Styracosaurus.jpg';
 
 export interface Dinosaur {
   name: string;
@@ -156,5 +182,88 @@ export const dinosaurs: Dinosaur[] = [
   {
     name: "Iguanodon",
     image: IguanodonPngImg
+  },
+  {
+    name: "Carnotaurus",
+    image: CarnotaurusImg
+  },
+  {
+    name: "Mamenchisaurus",
+    image: MamenchisaurusImg
+  },
+  // New WebP dinosaurs (additional)
+  {
+    name: "Dreadnoughtus",
+    image: DreadnoughtusImg
+  },
+  {
+    name: "Indoraptor",
+    image: IndoraptorImg
+  },
+  {
+    name: "Stygimoloch",
+    image: StygimolochImg
+  },
+  {
+    name: "Sinoceratops",
+    image: SinoceratopsImg
+  },
+  {
+    name: "Indominus Rex",
+    image: IndominusRexImg
+  },
+  {
+    name: "Ceratosaurus",
+    image: CeratosaurusImg
+  },
+  {
+    name: "Pteranodon",
+    image: PteranodonImg
+  },
+  {
+    name: "Kentrosaurus",
+    image: KentrosaurusImg
+  },
+  {
+    name: "Edmontosaurus",
+    image: EdmontosaurusImg
+  },
+  {
+    name: "Therizinosaurus",
+    image: TherizinosaurusImg
+  },
+  // New JPEG dinosaurs (additional)
+  {
+    name: "Mononykus",
+    image: MononykusImg
+  },
+  {
+    name: "Corythosaurus",
+    image: CorythosaurusImg
+  },
+  {
+    name: "Stegosaurus",
+    image: StegosaurusImg
+  },
+  // New JPG dinosaurs (additional)
+  {
+    name: "Mosasaurus",
+    image: MosasaurusImg
+  },
+  {
+    name: "Dimorphodon",
+    image: DimorphodonImg
+  },
+  {
+    name: "Minmi",
+    image: MinmiImg
+  },
+  {
+    name: "Euoplocephalus",
+    image: EuoplocephalusImg
+  },
+  {
+    name: "Styracosaurus",
+    image: StyracosaurusImg
   }
 ];

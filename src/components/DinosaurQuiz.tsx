@@ -28,6 +28,15 @@ const DinosaurQuiz: React.FC = () => {
     return () => clearTimeout(timer);
   }, [timeLeft, gameState]);
 
+  // Reset question state when current question changes
+  useEffect(() => {
+    if (gameState === 'playing') {
+      setSelectedAnswer(null);
+      setShowResult(false);
+      setIsCorrect(false);
+    }
+  }, [currentQuestion, gameState]);
+
   const startQuiz = () => {
     const newQuestions = generateQuizQuestions(10);
     setQuestions(newQuestions);
@@ -69,8 +78,10 @@ const DinosaurQuiz: React.FC = () => {
   };
 
   const nextQuestion = () => {
+    // Reset all question-related state
     setSelectedAnswer(null);
     setShowResult(false);
+    setIsCorrect(false);
     
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -213,10 +224,10 @@ const DinosaurQuiz: React.FC = () => {
           What dinosaur is this?
         </h2>
         
-                 <div className="options-grid">
+                 <div className="options-grid" key={`question-${currentQuestion}`}>
            {question.options.map((option, index) => (
              <button
-               key={index}
+               key={`${currentQuestion}-${index}`}
                className={`option-button ${
                  selectedAnswer === option
                    ? option === question.correctAnswer
