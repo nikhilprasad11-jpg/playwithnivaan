@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import DinosaurQuiz from './components/DinosaurQuiz';
 import DinosaurImageQuiz from './components/DinosaurImageQuiz';
@@ -6,6 +6,16 @@ import DinosaurJigsawPuzzle from './components/DinosaurJigsawPuzzle';
 import './App.css';
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -18,8 +28,22 @@ function App() {
               <Link to="/dinosaur-image-quiz" className="nav-link">🖼️ Image Quiz</Link>
               <Link to="/dinosaur-jigsaw" className="nav-link">🧩 Jigsaw Puzzle</Link>
             </div>
+            <button className="hamburger-menu" onClick={toggleMobileMenu}>
+              ☰
+            </button>
           </div>
         </nav>
+
+        {/* Mobile Menu Overlay */}
+        <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+          <button className="close-menu" onClick={closeMobileMenu}>
+            ✕
+          </button>
+          <Link to="/" className="nav-link" onClick={closeMobileMenu}>🏠 Home</Link>
+          <Link to="/dinosaur-quiz" className="nav-link" onClick={closeMobileMenu}>🦕 Dinosaur Quiz</Link>
+          <Link to="/dinosaur-image-quiz" className="nav-link" onClick={closeMobileMenu}>🖼️ Image Quiz</Link>
+          <Link to="/dinosaur-jigsaw" className="nav-link" onClick={closeMobileMenu}>🧩 Jigsaw Puzzle</Link>
+        </div>
 
         <main className="main-content">
           <Routes>
