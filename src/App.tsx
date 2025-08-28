@@ -6,6 +6,8 @@ import DinosaurJigsawPuzzle from './components/DinosaurJigsawPuzzle';
 import SeaAnimalsQuiz from './components/SeaAnimalsQuiz';
 import SeaAnimalsCards from './components/SeaAnimalsCards';
 import DinosaurCards from './components/DinosaurCards';
+import MathQuiz from './components/MathQuiz';
+import PictureMathQuiz from './components/PictureMathQuiz';
 import './App.css';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
               <Link to="/dinosaur-cards" className="nav-link">🦕 Dinosaur Cards</Link>
               <Link to="/sea-animals-quiz" className="nav-link">🐠 Sea Animals Quiz</Link>
               <Link to="/sea-animals-cards" className="nav-link">🐋 Sea Animals Cards</Link>
+              <Link to="/math-quiz" className="nav-link">🧮 Math Quiz</Link>
+              <Link to="/picture-math-quiz" className="nav-link">🖼️ Picture Math</Link>
             </div>
             <button className="hamburger-menu" onClick={toggleMobileMenu}>
               ☰
@@ -52,6 +56,8 @@ function App() {
           <Link to="/dinosaur-cards" className="nav-link" onClick={closeMobileMenu}>🦕 Dinosaur Cards</Link>
           <Link to="/sea-animals-quiz" className="nav-link" onClick={closeMobileMenu}>🐠 Sea Animals Quiz</Link>
           <Link to="/sea-animals-cards" className="nav-link" onClick={closeMobileMenu}>🐋 Sea Animals Cards</Link>
+          <Link to="/math-quiz" className="nav-link" onClick={closeMobileMenu}>🧮 Math Quiz</Link>
+          <Link to="/picture-math-quiz" className="nav-link" onClick={closeMobileMenu}>🖼️ Picture Math</Link>
         </div>
 
         <main className="main-content">
@@ -63,6 +69,8 @@ function App() {
             <Route path="/sea-animals-quiz" element={<SeaAnimalsQuiz />} />
             <Route path="/sea-animals-cards" element={<SeaAnimalsCards />} />
             <Route path="/dinosaur-cards" element={<DinosaurCards />} />
+            <Route path="/math-quiz" element={<MathQuiz />} />
+            <Route path="/picture-math-quiz" element={<PictureMathQuiz />} />
           </Routes>
         </main>
       </div>
@@ -152,6 +160,32 @@ function Home() {
                  <li>Interesting facts and information</li>
                  <li>Habitat and diet details</li>
                  <li>Fun facts for each animal</li>
+               </ul>
+             </div>
+           </Link>
+           
+           <Link to="/math-quiz" className="game-card">
+             <div className="game-card-content">
+               <h2>🧮 Math Quiz</h2>
+               <p>Practice addition and subtraction with fun math problems for Grade 1 students!</p>
+               <ul>
+                 <li>Addition problems (0-10)</li>
+                 <li>Subtraction problems (0-20)</li>
+                 <li>30 seconds per question</li>
+                 <li>Track your score and streak</li>
+               </ul>
+             </div>
+           </Link>
+           
+           <Link to="/picture-math-quiz" className="game-card">
+             <div className="game-card-content">
+               <h2>🖼️ Picture Math</h2>
+               <p>Count objects and solve math problems with visual learning for Grade 1!</p>
+               <ul>
+                 <li>🍎 Count fruits, animals, and fun objects</li>
+                 <li>➕ Addition with visual groups</li>
+                 <li>➖ Subtraction with visual groups</li>
+                 <li>45 seconds per question</li>
                </ul>
              </div>
            </Link>
