@@ -65,6 +65,9 @@ import MinmiImg from '../assets/images/minmi.jpg';
 import EuoplocephalusImg from '../assets/images/Euoplocephalus.jpg';
 import StyracosaurusImg from '../assets/images/Styracosaurus.jpg';
 
+// New TRex image
+import TRexImg from '../assets/images/TRex.jpeg';
+
 export interface Dinosaur {
   name: string;
   image: string;
@@ -265,5 +268,10 @@ export const dinosaurs: Dinosaur[] = [
   {
     name: "Styracosaurus",
     image: StyracosaurusImg
+  },
+  // New TRex
+  {
+    name: "Tyrannosaurus Rex",
+    image: TRexImg
   }
 ];

@@ -200,6 +200,139 @@ const dinosaurFacts: DinosaurFact[] = [
     period: "Late Cretaceous (75-71 million years ago)",
     diet: "Carnivore - hunted small animals and may have hunted in packs",
     funFact: "Velociraptor was actually the size of a turkey, not the giant monsters shown in movies!"
+  },
+  {
+    name: "Carnotaurus",
+    fact: "Carnotaurus was a fast-running carnivore with distinctive horns above its eyes.",
+    period: "Late Cretaceous (72-69 million years ago)",
+    diet: "Carnivore - hunted smaller dinosaurs",
+    funFact: "Carnotaurus had tiny arms even smaller than T-Rex's, and horns that looked like bull horns!"
+  },
+  {
+    name: "Mamenchisaurus",
+    fact: "Mamenchisaurus was a massive sauropod with an extremely long neck.",
+    period: "Late Jurassic (160-145 million years ago)",
+    diet: "Herbivore - ate leaves from very tall trees",
+    funFact: "Mamenchisaurus had the longest neck of any dinosaur - up to 46 feet long!"
+  },
+  {
+    name: "Dreadnoughtus",
+    fact: "Dreadnoughtus was one of the largest dinosaurs ever, a true titan of the prehistoric world.",
+    period: "Late Cretaceous (84-66 million years ago)",
+    diet: "Herbivore - ate massive amounts of vegetation",
+    funFact: "Dreadnoughtus was so huge it weighed as much as 12 elephants combined!"
+  },
+  {
+    name: "Indoraptor",
+    fact: "Indoraptor was a fictional hybrid dinosaur created in a laboratory.",
+    period: "Modern (fictional)",
+    diet: "Carnivore - designed to be a perfect predator",
+    funFact: "Indoraptor was created by combining Indominus Rex and Velociraptor DNA!"
+  },
+  {
+    name: "Stygimoloch",
+    fact: "Stygimoloch was a dome-headed dinosaur with spikes around its skull.",
+    period: "Late Cretaceous (66 million years ago)",
+    diet: "Herbivore - ate plants and vegetation",
+    funFact: "Stygimoloch had the most elaborate headgear of any dinosaur with spikes and knobs!"
+  },
+  {
+    name: "Sinoceratops",
+    fact: "Sinoceratops was a horned dinosaur with a large frill and single horn.",
+    period: "Late Cretaceous (72-66 million years ago)",
+    diet: "Herbivore - ate low-growing plants",
+    funFact: "Sinoceratops was the first ceratopsian dinosaur discovered in China!"
+  },
+  {
+    name: "Indominus Rex",
+    fact: "Indominus Rex was a fictional hybrid dinosaur created by combining multiple species.",
+    period: "Modern (fictional)",
+    diet: "Carnivore - designed to be the ultimate predator",
+    funFact: "Indominus Rex was created by mixing T-Rex, Velociraptor, and other dinosaur DNA!"
+  },
+  {
+    name: "Ceratosaurus",
+    fact: "Ceratosaurus was a medium-sized carnivore with a distinctive horn on its nose.",
+    period: "Late Jurassic (156-145 million years ago)",
+    diet: "Carnivore - hunted smaller dinosaurs and fish",
+    funFact: "Ceratosaurus had a horn on its nose and smaller horns above its eyes!"
+  },
+  {
+    name: "Pteranodon",
+    fact: "Pteranodon was a flying reptile, not a dinosaur, with a large crest on its head.",
+    period: "Late Cretaceous (86-84 million years ago)",
+    diet: "Piscivore - primarily ate fish",
+    funFact: "Pteranodon could fly for hours without flapping its wings, gliding on ocean breezes!"
+  },
+  {
+    name: "Kentrosaurus",
+    fact: "Kentrosaurus was a spiked dinosaur related to Stegosaurus with plates and spikes.",
+    period: "Late Jurassic (155-150 million years ago)",
+    diet: "Herbivore - ate low-growing plants",
+    funFact: "Kentrosaurus had spikes on its shoulders and tail that could be used for defense!"
+  },
+  {
+    name: "Edmontosaurus",
+    fact: "Edmontosaurus was a large duck-billed dinosaur with hundreds of teeth.",
+    period: "Late Cretaceous (73-66 million years ago)",
+    diet: "Herbivore - ate plants and vegetation",
+    funFact: "Edmontosaurus had up to 1,000 teeth in its mouth for grinding tough plants!"
+  },
+  {
+    name: "Therizinosaurus",
+    fact: "Therizinosaurus was a strange dinosaur with huge claws and a pot belly.",
+    period: "Late Cretaceous (70-66 million years ago)",
+    diet: "Herbivore - ate plants and leaves",
+    funFact: "Therizinosaurus had the longest claws of any dinosaur - up to 3 feet long!"
+  },
+  {
+    name: "Mononykus",
+    fact: "Mononykus was a small, bird-like dinosaur with tiny arms and one large claw.",
+    period: "Late Cretaceous (70-66 million years ago)",
+    diet: "Insectivore - ate insects and small animals",
+    funFact: "Mononykus had only one large claw on each arm, which it used to dig for insects!"
+  },
+  {
+    name: "Corythosaurus",
+    fact: "Corythosaurus was a duck-billed dinosaur with a helmet-like crest on its head.",
+    period: "Late Cretaceous (77-75 million years ago)",
+    diet: "Herbivore - ate plants and vegetation",
+    funFact: "Corythosaurus could make loud honking sounds through its hollow crest!"
+  },
+  {
+    name: "Mosasaurus",
+    fact: "Mosasaurus was a giant marine reptile, not a dinosaur, that ruled the ancient seas.",
+    period: "Late Cretaceous (82-66 million years ago)",
+    diet: "Carnivore - ate fish, sharks, and other marine animals",
+    funFact: "Mosasaurus was so powerful it could eat sharks whole and was the top predator of the ancient oceans!"
+  },
+  {
+    name: "Dimorphodon",
+    fact: "Dimorphodon was a flying reptile with two different types of teeth in its jaw.",
+    period: "Early Jurassic (195-190 million years ago)",
+    diet: "Carnivore - ate fish and small animals",
+    funFact: "Dimorphodon had two different types of teeth - long ones in front and short ones in back!"
+  },
+  {
+    name: "Minmi",
+    fact: "Minmi was a small armored dinosaur from Australia with bony plates on its back.",
+    period: "Early Cretaceous (120-100 million years ago)",
+    diet: "Herbivore - ate low-growing plants",
+    funFact: "Minmi was the first armored dinosaur discovered in Australia!"
+  },
+  {
+    name: "Euoplocephalus",
+    fact: "Euoplocephalus was a heavily armored dinosaur with a club-like tail.",
+    period: "Late Cretaceous (76-66 million years ago)",
+    diet: "Herbivore - ate low-growing plants",
+    funFact: "Euoplocephalus had armor so thick that even T-Rex couldn't bite through it!"
+  },
+  {
+    name: "Styracosaurus",
+    fact: "Styracosaurus was a horned dinosaur with spikes around its frill.",
+    period: "Late Cretaceous (75-74 million years ago)",
+    diet: "Herbivore - ate low-growing plants",
+    funFact: "Styracosaurus had up to 6 long spikes around its frill that made it look like a prehistoric crown!"
   }
 ];
 
